@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0290-word-pattern](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0290-word-pattern) |
 | [0344-reverse-string](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0345-reverse-vowels-of-a-string) |
+| [0796-rotate-string](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0796-rotate-string) |
 ## Array
 |  |
 | ------- |
@@ -281,4 +282,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0204-count-primes) |
+## String Matching
+|  |
+| ------- |
+| [0796-rotate-string](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0796-rotate-string) |
 <!---LeetCode Topics End-->
