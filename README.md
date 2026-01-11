@@ -11,4 +11,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0206-reverse-linked-list](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0206-reverse-linked-list) |
+## Hash Table
+|  |
+| ------- |
+| [0205-isomorphic-strings](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0205-isomorphic-strings) |
+## String
+|  |
+| ------- |
+| [0205-isomorphic-strings](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0205-isomorphic-strings) |
 <!---LeetCode Topics End-->
