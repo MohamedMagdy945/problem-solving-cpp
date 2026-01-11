@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0014-longest-common-prefix) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0027-remove-element) |
+| [0088-merge-sorted-array](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0219-contains-duplicate-ii) |
 | [0228-summary-ranges](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0228-summary-ranges) |
@@ -61,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0268-missing-number) |
@@ -146,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0027-remove-element) |
+| [0088-merge-sorted-array](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0088-merge-sorted-array) |
 | [0234-palindrome-linked-list](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0234-palindrome-linked-list) |
 | [0283-move-zeroes](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0344-reverse-string) |
