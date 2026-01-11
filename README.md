@@ -15,8 +15,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0205-isomorphic-strings](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0205-isomorphic-strings) |
+| [0217-contains-duplicate](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0217-contains-duplicate) |
 ## String
 |  |
 | ------- |
 | [0205-isomorphic-strings](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0205-isomorphic-strings) |
+## Array
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0217-contains-duplicate) |
+## Sorting
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
