@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0088-merge-sorted-array) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0118-pascals-triangle](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0118-pascals-triangle) |
+| [0119-pascals-triangle-ii](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0119-pascals-triangle-ii) |
 | [0217-contains-duplicate](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0219-contains-duplicate-ii) |
 | [0228-summary-ranges](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0228-summary-ranges) |
@@ -219,6 +220,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0070-climbing-stairs](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0070-climbing-stairs) |
 | [0118-pascals-triangle](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0118-pascals-triangle) |
+| [0119-pascals-triangle-ii](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0119-pascals-triangle-ii) |
 | [0338-counting-bits](https://github.com/MohamedMagdy945/https-github.com-MohamedMagdy945-problem-solving-cpp/tree/master/0338-counting-bits) |
 ## Trie
 |  |
