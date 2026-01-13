@@ -10,19 +10,16 @@ class Solution{
             if (path.length() == digits.length()) ans.push_back(path);
             return ;
         }
-        for(int i = idx ; i < digits.length() ; i++)
+        int phonenumIdx = digits[idx] - '0' - 2 ;
+        int length =  phonenum[phonenumIdx].length();
+        for (int j = 0 ; j < length  ;j++ )
         {
-            int phonenumIdx = digits[i] - '0' - 2 ;
-            int length =  phonenum[phonenumIdx].length();
-            for (int j = 0 ; j < length  ;j++ )
-            {
-                path.push_back(phonenum[phonenumIdx][j]);
-                backtrack(i + 1 , digits);
-                path.pop_back();
-            }
+            path.push_back(phonenum[phonenumIdx][j]);
+            backtrack(idx + 1 , digits);
+            path.pop_back();
         }
-
     }
+    
     vector<string> letterCombinations(string digits) {
         backtrack(0 , digits);
         return ans;
