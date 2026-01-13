@@ -32,8 +32,6 @@ public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {
         sort(nums.begin(), nums.end());       // Step 1: sort to handle duplicates
         used.assign(nums.size(), false);      // initialize used array
-        res.clear();                          // ensure res is empty
-        path.clear();                         // clear path
         backtrack(nums);
         return res;
     }
