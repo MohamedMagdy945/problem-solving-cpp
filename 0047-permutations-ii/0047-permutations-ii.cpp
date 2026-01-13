@@ -3,6 +3,7 @@ class Solution {
     vector<vector<int>> ans;
     vector<int> path;
     vector<bool> used;
+
     public:
     void backtrack(vector<int>& nums)
     {
@@ -11,12 +12,11 @@ class Solution {
             ans.push_back(path);
             return;
         }
-        unordered_set<int> used2;
         for(int i = 0 ; i < nums.size(); i++)
         {
-            if (used[i] || used2.count(nums[i])) continue; 
+            if (used[i]) continue; 
+            if (i > 0 && nums[i] == nums[i-1] && !used[i-1]) continue;
             used[i] = true;
-            used2.insert(nums[i]);
             path.push_back(nums[i]);
             backtrack(nums);
             path.pop_back();
@@ -25,6 +25,7 @@ class Solution {
     }
     vector<vector<int>> permuteUnique(vector<int>& nums) {
         used.resize(nums.size(), false);
+        sort(nums.begin(), nums.end());
         backtrack(nums);
         return ans;
     }
