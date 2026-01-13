@@ -2,7 +2,6 @@ class Solution {
 public:
     vector<vector<int>> ans;
     vector<int> path;
-
     void backtrack(int idx, vector<int>& nums) {
         if (path.size() >= 2)
             ans.push_back(path);
