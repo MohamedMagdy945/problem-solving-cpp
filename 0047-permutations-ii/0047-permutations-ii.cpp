@@ -7,19 +7,14 @@ private:
     vector<vector<int>> res;
     vector<int> path;
     vector<bool> used;
-
     void backtrack(vector<int>& nums) {
         if (path.size() == nums.size()) {
             res.push_back(path);
             return;
         }
-
         for (int i = 0; i < nums.size(); i++) {
             if (used[i]) continue;
-
-            // Skip duplicates
             if (i > 0 && nums[i] == nums[i-1] && !used[i-1]) continue;
-
             used[i] = true;
             path.push_back(nums[i]);
             backtrack(nums);
@@ -27,11 +22,10 @@ private:
             used[i] = false;
         }
     }
-
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {
-        sort(nums.begin(), nums.end());       // Step 1: sort to handle duplicates
-        used.assign(nums.size(), false);      // initialize used array
+        sort(nums.begin(), nums.end());       
+        used.assign(nums.size(), false);   
         backtrack(nums);
         return res;
     }
