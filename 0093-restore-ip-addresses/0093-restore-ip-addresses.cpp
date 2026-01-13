@@ -10,7 +10,6 @@ private:
         int val = stoi(segment);
         return val >= 0 && val <= 255;
     }
-
     string joinSegments(const vector<string> &segments)
     {
         string ip;
