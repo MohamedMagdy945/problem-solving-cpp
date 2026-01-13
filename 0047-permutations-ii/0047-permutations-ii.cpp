@@ -1,4 +1,14 @@
 class Solution {
+    public:
+    vector<vector<int>> permuteUnique(vector<int>& nums) {
+         vector<vector<int>> ans;
+        vector<int> path;
+        vector<bool> used;
+        used.resize(nums.size(), false);
+        sort(nums.begin(), nums.end());
+        backtrack(nums , used , path , ans);
+        return ans;
+    }
     private:
     void backtrack(vector<int>& nums , vector<bool>& used ,
     vector<int>& path ,vector<vector<int>>& ans)
@@ -18,15 +28,5 @@ class Solution {
             path.pop_back();
             used[i] =false;
         }
-    }
-    public:
-    vector<vector<int>> permuteUnique(vector<int>& nums) {
-         vector<vector<int>> ans;
-        vector<int> path;
-        vector<bool> used;
-        used.resize(nums.size(), false);
-        sort(nums.begin(), nums.end());
-        backtrack(nums , used , path , ans);
-        return ans;
     }
 };
