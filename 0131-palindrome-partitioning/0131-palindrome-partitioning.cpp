@@ -22,7 +22,6 @@ public:
             validPlaindromSubstring.push_back(currentSegmant);
             return;
         }
-        
         for(int i = currentPosition ; i < n ; i++)
         {
             string leftPart = s.substr(currentPosition , i - currentPosition + 1);
