@@ -1,23 +1,25 @@
 class Solution {
-private:
-    vector<int> path ;
-    vector<vector<int>> result ;
-    void backtrack(int idx , int n , int k)
-    {
-        if (path.size() == k )
-        {
-            result.push_back(path);
+public:
+    vector<vector<int>> result;
+    vector<int> current;
+
+    void backtrack(int start, int n, int k) {
+        // If the combination is complete
+        if (current.size() == k) {
+            result.push_back(current);
             return;
         }
-        for ( int i = idx ;  i <= n ; i++ ){
-            path.push_back(i);
-            backtrack( i + 1 , n ,k );
-            path.pop_back();
+
+        // Try numbers from 'start' to 'n'
+        for (int i = start; i <= n; i++) {
+            current.push_back(i);
+            backtrack(i + 1, n, k); // move to next number
+            current.pop_back();     // undo choice
         }
     }
-public:
+
     vector<vector<int>> combine(int n, int k) {
-        backtrack(1 , n , k);
-        return result ;
+        backtrack(1, n, k);
+        return result;
     }
 };
