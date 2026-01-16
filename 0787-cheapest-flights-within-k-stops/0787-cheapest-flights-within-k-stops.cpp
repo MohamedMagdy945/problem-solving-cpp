@@ -10,11 +10,9 @@ class Solution{
         }
 
         queue<tuple<int,int,int>> q;
-        q.push({src, 0, 0});
-
-        vector<vector<int>> best(graph.size(), vector<int>(k+2, 1e9));
         q.push({src , 0 , -1 });
         int minCost = 1e9;
+        vector<vector<int>> best(n , vector<int>(k+2, 1e9));
         while (!q.empty())
         {
             auto [node , cost ,steps] = q.front();
