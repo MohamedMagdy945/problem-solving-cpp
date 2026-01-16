@@ -8,7 +8,6 @@ class Solution{
         {
             graph[flight[0]].push_back({flight[1] , flight[2]});
         }
-
         queue<tuple<int,int,int>> q;
         q.push({src , 0 , -1 });
         int minCost = 1e9;
@@ -17,7 +16,7 @@ class Solution{
         {
             auto [node , cost ,steps] = q.front();
             q.pop();
-            if (steps > k  || cost > minCost ) continue; ;
+            if (steps > k   || cost > minCost ) continue; ;
             if (node == dst) {
                 minCost = min(minCost, cost);
                 continue;
