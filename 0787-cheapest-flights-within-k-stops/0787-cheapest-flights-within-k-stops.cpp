@@ -18,7 +18,7 @@ class Solution{
         int minCost = 1e9;
         while (!q.empty())
         {
-            auto &[node , cost ,steps] = q.front();
+            auto [node , cost ,steps] = q.front();
             q.pop();
             if (steps > k  || cost > minCost ) continue; ;
             if (node == dst) {
