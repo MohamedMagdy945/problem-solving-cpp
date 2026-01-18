@@ -7,29 +7,27 @@ class Solution{
         dis1[node1] =0 , dis2[node2] =0 ;
         int distant = 1;
         
-        while( edges[node1] != -1  )
+        while( edges[node1] != -1 && dis1[edges[node1]] == -1 )
         {
             dis1[edges[node1]] = distant++;
             node1= edges[node1];
         }
         distant = 1;
-        while(edges[node2] != -1)
+        while(edges[node2] != -1 && dis2[edges[node2]] == -1)
         {
             dis2[edges[node2]] = distant++;
             node2= edges[node2] ;
         }
-        int maxDis =  1e9;
+        int best = INT_MAX;
         int node = -1;
-        for(int i = 0 ;  i < n ; i++)
-        {
-            int d1 = dis1[i] , d2 = dis2[i];
-            if(d1  == -1 || d2 == -1) continue;
-            if(d1 +  d2 == maxDis && i < node) node = i;
-            else if( d1 + d2 < maxDis) 
-            {
-                maxDis = d1 + d2 ;
-                node = i ;
-            } 
+        for(int i = 0; i < n; i++) {
+            if(dis1[i] == -1 || dis2[i] == -1) continue;
+
+            int cur = max(dis1[i], dis2[i]);
+            if(cur < best) {
+                best = cur;
+                node = i;
+            }
         }
         return node ;
     }
