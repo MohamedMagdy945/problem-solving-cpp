@@ -1,25 +1,22 @@
 class Solution {
-private:
-    vector<int> vec ;
-    void Traversal(TreeNode* root)
-    {
-        if(!root) return ;
-        Traversal(root-> left);
-        vec.push_back(root->val);
-        Traversal(root-> right);
-    }
+    private:
+        int minDiff = INT_MAX ;
+        int preVal =  -1 ;
+        void Traversal(TreeNode* root , int rootVal)
+        {
+            if(!root) return ;
+        
+            Traversal(root-> left , root -> val);
+            if(preVal != -1 )
+            {
+                minDiff= min(minDiff, root -> val - preVal);
+            }
+            preVal = root -> val ;
+            Traversal(root-> right , root -> val);
+        }
 public:
     int minDiffInBST(TreeNode* root) {
-        Traversal(root);
-        int minDiff= INT_MAX ;
-        for(int i=1 ; i < vec.size() ; i++)
-        {
-            int diff = vec[i] - vec[i -1];
-            if(minDiff  > diff)
-            {
-                minDiff = diff ;
-            }
-        }
+        Traversal(root , -1);
         return minDiff;
     }
 };
