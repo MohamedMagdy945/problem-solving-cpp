@@ -7,7 +7,7 @@ class Solution{
         if(!root)
             return "#";
         
-        string subTree = to_string(root->val) + "#" + Traversal(root->left) + "#" + Traversal(root-> right);
+        string subTree = to_string(root->val) + "," + Traversal(root->left) + "," + Traversal(root-> right);
         
         if(subTrees[subTree]++ == 1)
         {
