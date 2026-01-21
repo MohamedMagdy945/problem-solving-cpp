@@ -4,22 +4,16 @@ class Solution{
     long long totalFuel = 0;
     int seats  ;
     
-    pair<int,int> DFS(int node , int parent){
-        int people = 0;
-        int cars  = 0;
+    int DFS(int node , int parent){
+        int people = 1;
         for(auto& child: tree[node])
         {
             if (child == parent) continue; 
-            auto [ p , c] = DFS(child, node);
-            cars += c;
-            people += p ;
-            cars = (people + seats - 1) / seats ;
-        }       
-        people++;
-        if(people > cars * seats) 
-            cars++;
-        totalFuel += cars ;
-        return {people , cars};
+            people += DFS(child, node);
+        } 
+                     
+        totalFuel += (people + seats - 1) / seats ;
+        return people ;
     }
     public: 
     long long minimumFuelCost(vector<vector<int>>& roads, int _seats)
@@ -32,8 +26,7 @@ class Solution{
             tree[road[0]].push_back(road[1]);
             tree[road[1]].push_back(road[0]);
         }
-        auto [r , c] =  DFS(0 , -1);
-        return totalFuel != 0 ? totalFuel - c : 0  ;
+        int pep = DFS(0 , -1);
+        return totalFuel != 0 ? totalFuel - ((pep + seats - 1) / seats) : 0  ;
     }
 };
-
