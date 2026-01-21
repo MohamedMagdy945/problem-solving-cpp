@@ -11,8 +11,8 @@ class Solution{
             if (child == parent) continue; 
             people += DFS(child, node);
         } 
-                     
-        totalFuel += (people + seats - 1) / seats ;
+        if (node != 0)             
+            totalFuel += (people + seats - 1) / seats ;
         return people ;
     }
     public: 
@@ -26,7 +26,7 @@ class Solution{
             tree[road[0]].push_back(road[1]);
             tree[road[1]].push_back(road[0]);
         }
-        int pep = DFS(0 , -1);
-        return totalFuel != 0 ? totalFuel - ((pep + seats - 1) / seats) : 0  ;
+        DFS(0 , -1);
+        return totalFuel ;
     }
 };
