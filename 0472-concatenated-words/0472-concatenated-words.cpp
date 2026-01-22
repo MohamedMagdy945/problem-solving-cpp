@@ -1,47 +1,43 @@
 class Solution {
-public:
+private:
+unordered_map<int, bool> memo ;
 
-    bool isContacted(const string& word , const unordered_set<string>& dict)
+bool backtrack(const string& word , int idx , const unordered_set<string> &dict)
+{
+    if( word.size() == idx ) return true ;
+    if(memo.count(idx)) return memo[idx] ;
+    string w = "";
+    for(int i = idx ; i < word.size() ;  i++)
     {
-        int n = word.size();
-
-        vector<int> dp(n + 1);
-        dp[0] = true;
-        for(int i = 1 ; i <= n ; i++)
+        w.push_back(word[i]);
+        if(dict.count(w))
         {
-            int j = 0 ;
-            if (i == n)  j = 1;
-            while(j < i )
+            if(backtrack(word , i + 1 , dict))
             {
-                string x = word.substr(j , i - j) ;
-                if(dp[j] && dict.count(word.substr(j , i - j)))
-                {
-                    dp[i] = true ;
-                    break ;
-                }
-                j++;
+                return memo[idx] = true ;
             }
         }
-        return dp[n];
     }
+    return memo[idx] = false;
+}
+public:
     vector<string> findAllConcatenatedWordsInADict(vector<string>& words) {
-        vector<string> result;
+        vector<string> result ;
+         sort(words.begin(), words.end(),
+             [](const string &a, const string &b) {
+                 return a.size() < b.size();
+             });
         unordered_set<string> dict;
-
-        sort(words.begin(), words.end(),
-        []  (const string& a , const string& b) {
-        return a.size() < b.size();
-        }) ;
-            
-        for(auto & w : words)
+        for(auto& word : words)
         {
-
-            if(isContacted(w , dict))
+            memo.clear();
+            if(backtrack(word , 0 ,dict))
             {
-                result.push_back(w);
+                result.push_back(word);
             }
-            dict.insert(w);
+            dict.insert(word);
         }
         return result;
-    }        
+    }
 };
+
