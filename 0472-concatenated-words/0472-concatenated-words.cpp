@@ -3,7 +3,7 @@ private:
 unordered_set<string> uniqueWords ;
 unordered_map<int, bool> memo ;
 
-bool backtrack(string& word , int idx )
+bool backtrack(const string& word , int idx )
 {
     if( word.size() == idx ) return true ;
     if(memo.count(idx)) return memo[idx] ;
