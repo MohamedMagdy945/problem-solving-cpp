@@ -34,7 +34,6 @@ public:
         for(auto& word : words)
         {
             memo.clear();
-            dict.erase(word);
             if(backtrack(word , 0 ,dict))
             {
                 result.push_back(word);
