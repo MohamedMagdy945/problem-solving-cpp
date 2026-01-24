@@ -5,7 +5,7 @@ class Solution{
         unordered_map<int , int> freq {{0 ,1}} ;
         int pre = 0 , ans = 0;
         for(auto &num: nums){ 
-            pre = (((pre + num) % k) + k) % k ; 
+            pre = (pre + num % k + k) % k ; 
             ans += freq[pre];
             freq[pre]++;
         }
